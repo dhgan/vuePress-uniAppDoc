@@ -7,10 +7,10 @@ meta:
     content: 高效、快速的打造uni-app
 features:
 - title: 简明优先
-  details: 对以 markdown 为中心的项目结构，做最简化的配置，帮助你专注于创作。
-- title: Vue 驱动
-  details: 享用 Vue + webpack 开发环境，在 markdown 中使用 Vue 组件，并通过 Vue 开发自定义主题。
-- title: 性能高效
-  details: VuePress 将每个页面生成为预渲染的静态 HTML，每个页面加载之后，然后作为单页面应用程序(SPA)运行。
-footer: MIT Licensed | Copyright © 2018-present Evan You
+  details: 同vue-router的api无须重新阅读文档，快速上手、分分钟了解原理。
+- title: 多才多艺
+  details: 选用uni-app、插件丰盛的市场、多才多艺的开发者。你也可以赶紧来加入吧
+- title: 多端发布
+  details: 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码可发布到多个平台
+footer: MIT Licensed | Copyright © 2018-present hhyang
 ---
