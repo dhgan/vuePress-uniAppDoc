@@ -1,4 +1,8 @@
-# uni-simple-router
+# 安装
+
+## 通过插件市场下载
+
+[https://ext.dcloud.net.cn/plugin?id=578](https://ext.dcloud.net.cn/plugin?id=578)
 
 ### 一个更为简洁的[Vue-router](https://router.vuejs.org/zh/)，专为 uni-app 量身打造
 

@@ -1,7 +1,8 @@
 const themeConfig = {
+    sidebarDepth:2,
     nav: [{
             text: '指南',
-            link: ''
+            link: '/src/router/index.md'
         },
         {
             text: 'API 参考',
@@ -26,12 +27,7 @@ const themeConfig = {
             text: 'GitHub',
             link:'https://github.com/SilurianYang/uni-simple-router'
         }
-    ],
-    sidebar: {
-        '/src/css/': [
-            
-        ]
-    }
+    ]
 }
 module.exports = {
     themeConfig

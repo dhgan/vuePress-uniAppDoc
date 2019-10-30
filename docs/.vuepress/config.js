@@ -6,9 +6,12 @@ const {
 } = require('./themeConfig.js')
 const path = require('path');
 module.exports = {
-  title: 'uni-app-tools',
+  title: 'uni-simple-router',
   description,
   themeConfig,
+  markdown: {
+    lineNumbers: true
+  },
   configureWebpack: {
     resolve: {
       alias: {
