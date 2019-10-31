@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 起步 →
-actionLink: /src/doc1/request/ajax.md
+actionLink: /src/router/start.md
 meta:
   - name: description
     content: 高效、快速的打造uni-app

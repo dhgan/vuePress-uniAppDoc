@@ -1,8 +1,8 @@
 const themeConfig = {
-    sidebarDepth:2,
+    sidebarDepth:0,
     nav: [{
             text: '指南',
-            link: '/src/router/index.md'
+            link: '/src/router/install.md'
         },
         {
             text: 'API 参考',
@@ -27,6 +27,17 @@ const themeConfig = {
             text: 'GitHub',
             link:'https://github.com/SilurianYang/uni-simple-router'
         }
+    ],
+    sidebar:[
+        ['/src/router/install','安装'],
+        ['/src/router/introduction','介绍'],
+        {
+            title: '基础',
+            collapsable: false,
+            children: [
+              ['/src/router/start','起步']
+            ]
+          },
     ]
 }
 module.exports = {
