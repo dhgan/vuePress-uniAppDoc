@@ -62,7 +62,7 @@ const router = new Router({
 const app = new Vue({
     ...App,
 })
-RouterMount(app,'#app');  //去除原有的app.$mount();使用路由自带的渲染方式
+RouterMount(app,'#app');  //v1.3.5起 你应该去除原有的app.$mount();使用路由自带的渲染方式
 
 // 现在，应用已经启动了！
 ```
