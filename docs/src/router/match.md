@@ -59,4 +59,57 @@ const router = new Router({
 </script>
 ```
 
- 这是一个简单而又实用的列子。对于 `v1.3.5` 起的 `H5还有更多的配置` 
+这是一个简单而又实用的列子。对于 `v1.3.5` 起的 `H5还有更多的配置`，甚至你可以通过配置 `uni-simple-router` 实例化参数来控制 `H5运行模式`。<br/>
+
+## 完全使用vue-router开发
+
+下面是一个完全使用 [vue-router](https://router.vuejs.org/zh/guide/) 开发的模式的例子：
+
+```js {3,6-21}
+const router = new Router({
+  h5:{
+    vueRouterDev:true,  //完全使用vue-router开发 默认 false  
+  },
+  routes:[
+    {
+        path:'/',
+        name:'router1',
+        component:()=>import('@/common/router/router1.vue'),
+        children:[
+            {
+                path:'route1/children1',
+                name:'children1',
+                component:()=>import('@/common/router/router1/children1.vue'),
+            },
+            {
+                path:'route1/:id',
+                name:'children2',
+                component:()=>import('@/common/router/router1/children2.vue'),
+            }
+        ]
+    },
+  ]
+});
+```
+当设置 `vueRouterDev:true` 后，你可以在任何地方进行挂载或者嵌套。它能使用 `vue-router` 的所有功能。同时它也将会失去 `uni-app` 的生命周期。更多请查看 [vue-router](https://router.vuejs.org/zh/guide/) 官方文档。此时你的组件页面也应该是使用  `vue-router` 的api及组件，**废弃掉 uni-simple-router 的api。**
+
+```js {5,15}
+//router1.vue
+<template>
+  <div>
+      //通过vue-router全局组件router-view来挂载视图
+      <router-view></router-view>   
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {}
+  },
+  created(){
+    console.log(this.$route)    //此时我们使用vue-router的api进行获取
+  },
+}
+</script>
+```
