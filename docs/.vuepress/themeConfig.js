@@ -50,7 +50,6 @@ const themeConfig = {
             children:[
                 ['/src/router/guard','导航守卫'],
                 ['/src/router/routeInfo','路由元信息'],
-                ['/src/router/getData','数据获取'],
                 ['/src/router/transitions','过渡动效'],
                 ['/src/router/lazyLoading','路由懒加载']
             ]
