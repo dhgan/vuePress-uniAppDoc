@@ -1,4 +1,4 @@
-# 嵌套路由 <sup>v1.3.5</sup>
+# 嵌套路由 <sup>v1.3.5+</sup>
 
 ::: warning 注意
 目前版本仅支持H5端的完全使用vue-router开发模式

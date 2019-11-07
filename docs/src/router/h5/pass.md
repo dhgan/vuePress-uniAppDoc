@@ -58,6 +58,6 @@ http://xxxx/router1?query=%257B%2522userId%2522%253A%2522123%2522%257D
 ```
 编码传输则不同，他是在传递之前做了 `encodeURIComponent` 编码，并在编码好的参数加上  `query=`  连接，成为一个完整的url。获取时解释对象成为一个 `JSON`、 他虽然不美观 但是能还原深度对象。
 
-## vue-router那套
+## vue-router那套 <sup>v1.3.5+</sup>
 
 对于 `完全使用vue-router开发` 的同学，可以参考 [vue-router指南](https://router.vuejs.org/zh/guide/essentials/passing-props.html#%E5%B8%83%E5%B0%94%E6%A8%A1%E5%BC%8F)

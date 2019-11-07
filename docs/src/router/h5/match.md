@@ -56,7 +56,7 @@ const router = new Router({
 
 这是一个简单而又实用的列子。对于 `v1.3.5` 起的 `H5还有更多的配置`，甚至你可以通过配置 `uni-simple-router` 实例化参数来控制 `H5运行模式`。<br/>
 
-## H5端完全使用vue-router开发 <sup>v1.3.5</sup>
+## H5端完全使用vue-router开发 <sup>v1.3.5+</sup>
 
 下面是一个完全使用 [vue-router](https://router.vuejs.org/zh/guide/) 开发的模式的例子：
 
@@ -110,7 +110,7 @@ export default {
 ```
 你还可以点击这里进行学习更多配置。有时候你在H5端做简单的路由url美化，你还可以这样做：
 
-## H5端自定义url <sup>v1.3.5</sup>
+## H5端自定义url <sup>v1.3.5+</sup>
 
 除了可以 `完全使用vue-router开发` 以外，你还可以在 `uni-app` 原有配置的基础上进行修改 url。
 
@@ -131,7 +131,7 @@ const router = new Router({
 ```
 上面的配置很简单，你只需要配置一个简单的 `aliasPath` 即可。 通过设置 `aliasPath` 别名来重置 uni-app 的默认路径，如果你不提供 `aliasPath` 时 `uni-simple-router` 则默认采用 `path` 作为路径进行匹配。所有这时的 `path` 是不能缺少的。**作为基础，及为了兼容其他端，此时的path不能少，必须和 pages.json中的页面路径匹配**。 因为 `uni-app` 在h5端时，第一个页面都设置为 '/' ，你可以不用配置。
 
-## H5端动态加载页面 <sup>v1.3.5</sup>
+## H5端动态加载页面 <sup>v1.3.5+</sup>
 
 其实和上面的几种配置大同小异。动态加载组件，其实就是不采用 `uni-app中pages.json` 里面的配置页面。通过设置路由的 `component` 选项进行动态加载。
 
@@ -171,6 +171,6 @@ const router = new Router({
 当使用通配符路由时，请确保路由的顺序是正确的，也就是说含有通配符的路由应该放在最后。路由 **{ path: '*' }** 通常用于客户端 404 错误。如果你使用了History 模式，请确保[正确配置你的服务器](https://router.vuejs.org/zh/guide/essentials/history-mode.html)。
 
 
-## 匹配优先级 <sup>v1.3.5</sup>
+## 匹配优先级 <sup>v1.3.5+</sup>
 
 有时候，同一个路径可以匹配多个路由，此时，匹配的优先级就按照路由的定义顺序：谁先定义的，谁的优先级就最高。**(目前更多的是变现在H5端)**

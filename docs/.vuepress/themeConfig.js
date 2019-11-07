@@ -56,35 +56,10 @@ const themeConfig = {
               ['/src/router/h5/pass','路由传参'],
               ['/src/router/h5/guard','导航守卫'],
               ['/src/router/h5/routeInfo','路由元信息'],
-              ['/src/router/h5/getData','数据获取'],
               ['/src/router/h5/transitions','过渡动效'],
               ['/src/router/h5/lazyLoading','路由懒加载']
             ]
         },
-        // {
-        //     title: '基础',
-        //     collapsable: false,
-        //     children: [
-        //       ['/src/router/start','起步'],
-        //       ['/src/router/match','路由匹配'],
-        //       ['/src/router/nesting','嵌套路由'],
-        //       ['/src/router/codeRoute','编程式及组件式导航'],
-        //       ['/src/router/nameRoute','命名路由及视图'],
-        //       ['/src/router/redirect','重定向和别名'],
-        //       ['/src/router/pass','路由传参']
-        //     ]
-        // },
-        // {
-        //     title: '进阶',
-        //     collapsable: false, 
-        //     children:[
-        //         ['/src/router/guard','导航守卫'],
-        //         ['/src/router/routeInfo','路由元信息'],
-        //         ['/src/router/getData','数据获取'],
-        //         ['/src/router/transitions','过渡动效'],
-        //         ['/src/router/lazyLoading','路由懒加载']
-        //     ]
-        // }
     ]
 }
 module.exports = {
