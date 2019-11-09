@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 开始 →
-actionLink: /src/router/quickstart.md
+actionLink: /src/router/start/quickstart.md
 meta:
   - name: description
     content: 高效、快速的打造uni-app
