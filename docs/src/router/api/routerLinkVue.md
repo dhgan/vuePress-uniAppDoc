@@ -4,7 +4,9 @@ sidebarDepth: 2
 
 # vue-router中的 `<router-link>`
 
-**只能针对 `H5端` 使用，并且必须是 [完全采用vue-router开发](../start/h5/match#h5端完全使用vue-router开发-v1-3-5) 的模式下才能使用。**
+::: warning 注意
+只能针对 `H5端` 使用，并且必须是 [完全采用vue-router开发](../start/h5/match#h5端完全使用vue-router开发-v1-3-5) 的模式下才能使用。
+:::
  
 ## `<router-link>`
 

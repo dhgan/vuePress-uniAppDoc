@@ -6,17 +6,12 @@ const themeConfig = {
         },
         {
             text: 'API 参考',
-            link: '/src/router/api/routerLinkDiff.md'
+            link: '/src/router/api/routerInsatll.md'
         },
         {
             text: '相关教程',
             items:[
-                { text: 'CSS', link: 'https://www.baidu.com/' },
-				{ text: 'JS', link: 'https://www.baidu.com/' },
-				{ text: 'linux', link: 'https://www.baidu.com/' },
-				{ text: 'nginx', link: 'https://www.baidu.com/' },
-				{ text: 'http协议', link: 'https://www.baidu.com/' },
-				{ text: '浏览器相关', link: 'https://www.baidu.com/' },
+                { text: 'H5拦截uni-app自带tabbar', link: '/src/router/tutorial/ljTabbar' },
             ]
         },
         {
@@ -67,9 +62,9 @@ const themeConfig = {
                 title: 'API 参考',
                 collapsable: false,
                 children: [
-                  ['/src/router/api/routerLInkSimple','simple-router中的<router-link>'],
-                  ['/src/router/api/routerLinkVue','vue-router中的<router-link>'],
-                  ['/src/router/api/routerLinkDiff','前两者的区别'],
+                  ['/src/router/api/routerLInkSimple','simple-router 中的 <router-link>'],
+                  ['/src/router/api/routerLinkVue','vue-router 中的 <router-link>'],
+                  ['/src/router/api/routerInsatll','simple-router 路由配置'],
                 ]   
             },
         ]
