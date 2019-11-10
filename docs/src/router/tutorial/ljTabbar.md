@@ -1,6 +1,5 @@
 ---
 sidebarDepth: 0
-sidebar: false
 ---
 
 # H5端使用自定义路径并拦截uni-app自带tabbar

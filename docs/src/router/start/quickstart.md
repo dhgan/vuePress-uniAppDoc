@@ -142,7 +142,7 @@ export default router;
 :::
 ### 第3步、配置main.js
 根目录下找到main.js，引入router
-```js
+```js{13-19}
 // main.js
 import Vue from 'vue'
 import App from './App'
@@ -154,7 +154,14 @@ App.mpType = 'app'
 const app = new Vue({
 	...App
 })
-RouterMount(app, '#app')////v1.3.5起 你应该去除原有的app.$mount();使用路由自带的渲染方式
+//v1.3.5起 H5端 你应该去除原有的app.$mount();使用路由自带的渲染方式
+// #ifdef H5
+	RouterMount(app,'#app');
+// #endif
+
+// #ifndef H5
+	app.$mount(); //为了兼容小程序及app端必须这样写才有效果
+// #endif
 
 ```
 ### 在其它js文件中使用router,
