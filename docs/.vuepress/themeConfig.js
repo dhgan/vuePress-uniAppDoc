@@ -16,6 +16,23 @@ const themeConfig = {
             }, ]
         },
         {
+            text: '相关文档',
+            items:[
+                {
+                    text: 'uni-app 文档',
+                    link: 'https://uniapp.dcloud.io/'   
+                },
+                {
+                    text: 'vue-router 文档',
+                    link: 'https://router.vuejs.org/zh/'
+                },
+                {
+                    text: 'uni-app-tools 文档',
+                    link: 'http://tool.hhyang.cn/'
+                }
+            ]
+        },
+        {
             text: '更新记录',
             link: 'https://github.com/SilurianYang/uni-simple-router/releases'
         },
