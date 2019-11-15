@@ -88,13 +88,14 @@ export default modules
 我们不难发现，这个index.js将引入同目录下其他js文件并读取，使所有路由整合为一个数组并export导出。
 接下来你可以根据不同的页面分类，创建不同的js模块，我们试着在modules下创建一个home.js用于存放首页及其相关的路由
 
-```js
+```js {6}
 // router/modules/home.js
 const home = [
 	{
         //注意：path必须跟pages.json中的地址对应，最前面别忘了加'/'哦
-	    path: '/pages/home/index',
-        name: 'index',
+      path: '/pages/home/index',
+      aliasPath:'/',  //对于h5端你必须在首页加上aliasPath并设置为/
+      name: 'index',
         meta: {
 	        title: '首页',
 	    },
@@ -110,7 +111,7 @@ const home = [
 export default home
 
 ```
-这时该模块将被自动加载到modules中，你可以根据不同的路由分类，添加更多模块。index.js会自动载入,就是这么方便!
+这时该模块将被自动加载到modules中，你可以根据不同的路由分类，添加更多模块。index.js会自动载入,就是这么方便! **对于糟色部分，那是必须的。否则你将会出现首页加载不出，路由匹配为空的情况。**
 ### 第2步、引入uni-simple-router模块
 我们打开router下的index.js,配置如下
 ```js
@@ -142,7 +143,7 @@ export default router;
 :::
 ### 第3步、配置main.js
 根目录下找到main.js，引入router
-```js{13-19}
+```js {13-19}
 // main.js
 import Vue from 'vue'
 import App from './App'
@@ -164,7 +165,7 @@ const app = new Vue({
 // #endif
 
 ```
-### 在其它js文件中使用router,
+### 在其它js文件中使用router
 至此，你可以在所有页面中使用this.$Router跳转，或者用this.$Route接收参数了。但是在一些模块的js中（比如封装的网络请求拦截）使用时，可能会出现this指代不明的情况。这时，刚才我们创建的router文件模块的好处就显现出来了。
 比如在根目录下的requset.js中使用router
 ```js

@@ -1,7 +1,7 @@
 # 介绍
 
 ::: warning 注意
-请优先使用HBuilderX进行初始化项目，脚手架项目请手动配置vue-config.js
+vue-cli 项目请手动配置 vue-config.js 下 transpileDependencies:['uni-simple-router'] [详细](https://cli.vuejs.org/zh/config/#transpiledependencies)
 :::
 
 [uni-simple-router](https://github.com/SilurianYang/uni-simple-router) 是 专为 [uni-app](https://uniapp.dcloud.io/) 打造的路由管理器。它保留了 [Vue-router](https://router.vuejs.org/zh/) 完全相似的书写风格，让你 倍感亲切。 让构建单页面应用变得易如反掌。包含的功能有：

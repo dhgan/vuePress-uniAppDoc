@@ -30,5 +30,5 @@ footer: MIT Licensed | Copyright © 2018-present hhyang
 
 ```
 ::: warning 注意
-请优先使用HBuilderX进行初始化项目，脚手架项目请手动配置vue-config.js
+vue-cli 项目请手动配置 vue-config.js 下 transpileDependencies:['uni-simple-router'] [详细](https://cli.vuejs.org/zh/config/#transpiledependencies)
 :::
