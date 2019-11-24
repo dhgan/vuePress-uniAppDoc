@@ -38,6 +38,7 @@ interface RouteConfig = {
 * 平台：`H5`
 
 ```js
+    paramsToQuery:false,    //h5端通过params传参 刷新会丢失 开启此开关将变成?连接的方式
     loading:true,		//是否显示加载动画
     vueRouterDev:false,	//完全使用采用vue-router的开发模式
     useUniConfig:true,	//是否采用在pages.json下的所有页面配置信息
