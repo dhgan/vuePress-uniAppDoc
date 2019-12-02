@@ -13,14 +13,16 @@ const themeConfig = {
             items: [{
                 text: 'H5拦截uni-app自带tabbar',
                 link: '/src/router/tutorial/ljTabbar'
-            }, ]
+            },{
+                text: 'onLaunch异步于onLoad之前',
+                link: '/src/router/tutorial/LifeCycle'
+            } ]
         },
         {
             text: '相关文档',
-            items:[
-                {
+            items: [{
                     text: 'uni-app 文档',
-                    link: 'https://uniapp.dcloud.io/'   
+                    link: 'https://uniapp.dcloud.io/'
                 },
                 {
                     text: 'vue-router 文档',
@@ -88,6 +90,9 @@ const themeConfig = {
         '/src/router/tutorial': [{
             title: 'H5拦截uni-app自带tabbar',
             path: '/src/router/tutorial/ljTabbar'
+        },{
+            title: 'onLaunch异步于onLoad之前',
+            path: '/src/router/tutorial/LifeCycle'
         }]
     }
 }
