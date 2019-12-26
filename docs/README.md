@@ -30,5 +30,5 @@ footer: MIT Licensed | Copyright © 2018-present hhyang [粤ICP备19043552号](w
 
 ```
 ::: warning 注意
-vue-cli 项目请手动配置 vue-config.js 下 transpileDependencies:['uni-simple-router'] [详细](https://cli.vuejs.org/zh/config/#transpiledependencies)
+vue-cli 项目请手动配置 vue.config.js 下 transpileDependencies:['uni-simple-router'] [详细](https://cli.vuejs.org/zh/config/#transpiledependencies)
 :::
