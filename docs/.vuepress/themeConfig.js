@@ -76,6 +76,14 @@ const themeConfig = {
                     ['/src/router/start/h5/lazyLoading', '路由懒加载']
                 ]
             },
+            {
+                title: '进阶',
+                collapsable: false,
+                children:[
+                    ['/src/router/start/advance/app/explian','APP 端进阶'],
+                    ['/src/router/start/advance/H5/explian','H5 端进阶'],
+                ]
+            }
         ],
         '/src/router/api/': [{
             title: 'API 参考',

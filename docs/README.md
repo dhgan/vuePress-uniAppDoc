@@ -12,7 +12,7 @@ features:
   details: 选用uni-app、插件丰盛的市场、多才多艺的开发者。你也可以赶紧来加入吧
 - title: 多端发布
   details: 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码可发布到多个平台
-footer: MIT Licensed | Copyright © 2018-present hhyang
+footer: MIT Licensed | Copyright © 2018-present hhyang [粤ICP备19043552号](www.beian.miit.gov.cn)
 ---
 
 ### 就像数 1, 2, 3 一样容易 
